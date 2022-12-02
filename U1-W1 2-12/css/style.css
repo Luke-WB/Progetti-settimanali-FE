@@ -1,0 +1,120 @@
+/* Your styles here */
+body {
+  font-family: "Open Sans", sans-serif;
+  color: #393d41;
+  font-size: 1.2rem;
+  line-height: 1.65;
+  margin: auto;
+  text-align: center;
+}
+
+.intestazione {
+  background-color: black;
+  padding-top: 15px;
+  padding-bottom: 15px;
+}
+.intestazione img {
+  width: 40%;
+}
+.sotto-intestazione {
+  background-image: url(../images/banner.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  padding-top: 15px;
+  padding-bottom: 40px;
+  padding-left: 25px;
+  padding-right: 25px;
+}
+
+.headings {
+  font-family: "Montserrat", sans-serif;
+  color: #25a2c3;
+  line-height: 1;
+}
+button {
+  font-family: "Montserrat", sans-serif;
+  background-color: #f04c2f;
+  border-color: transparent;
+  border-radius: 4px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+button a {
+  color: white;
+  text-decoration: none;
+}
+.prima-parte {
+  padding-left: 25px;
+  padding-right: 25px;
+}
+.prima-parte img {
+  width: 60%;
+  border-radius: 50cm;
+}
+.seconda-parte {
+  background-color: #e22d0e;
+  color: white;
+  padding-left: 30px;
+  padding-right: 25px;
+  padding-top: 25px;
+  padding-bottom: 10px;
+}
+.seconda-parte h2 {
+  font-family: "Montserrat", sans-serif;
+}
+.corsivo {
+  font-style: italic;
+}
+.aumento {
+  font-size: 20px;
+}
+text {
+  font-size: 17px;
+}
+
+aside {
+  padding-left: 25px;
+  padding-right: 25px;
+}
+aside img {
+  width: 100%;
+}
+.blocco1 {
+  border: 1px solid lightgray;
+  border-bottom-left-radius: 7px;
+  border-bottom-right-radius: 7px;
+}
+.blocco2 {
+  border: 1px solid lightgray;
+  border-bottom-left-radius: 7px;
+  border-bottom-right-radius: 7px;
+}
+.blocco3 {
+  border: 1px solid lightgray;
+  border-bottom-left-radius: 7px;
+  border-bottom-right-radius: 7px;
+}
+footer {
+  background-color: #25a2c3;
+  color: #c8e7f0;
+  padding-top: 15px;
+  padding-bottom: 40px;
+  padding-left: 30px;
+  padding-right: 30px;
+}
+footer h2 {
+  color: white;
+}
+footer a {
+  color: #c8e7f0;
+}
+footer i {
+  color: white;
+}
+hr {
+  width: 50%;
+  color: #c8e7f0;
+}

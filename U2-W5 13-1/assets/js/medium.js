@@ -16,12 +16,19 @@ const fermati = () => {
 };
 
 const nav = document.querySelector("nav");
+console.log(nav);
+const li = document.querySelector(".lista-ultima");
+console.log(li);
+
+const header = document.querySelector("header").offsetHeight;
+console.log(header);
+
 window.onscroll = function () {
-  if (document.body.scrollTop >= 50) {
+  if (window.scrollY > header) {
     nav.classList.add("bianca");
-    console.log("okokok");
+    li.classList.add("lista-verde");
   } else {
     nav.classList.remove("bianca");
-    console.log("okok");
+    li.classList.remove("lista-verde");
   }
 };

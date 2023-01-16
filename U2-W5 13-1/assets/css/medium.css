@@ -18,9 +18,7 @@ nav {
 .bianca {
   background-color: white;
 }
-.nav-lista-verde {
-  background-color: green;
-}
+
 nav img {
   height: 25px;
 }
@@ -46,6 +44,9 @@ nav li:hover {
 .lista-ultima a {
   color: white;
   text-decoration: none;
+}
+.lista-verde {
+  background-color: green;
 }
 header {
   background-color: #ffc017;

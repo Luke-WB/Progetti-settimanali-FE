@@ -1,0 +1,348 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;500;600;700;800;900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./scss/app.css" />
+    <title>Niantic Gaming Web Site</title>
+  </head>
+
+  <body>
+    <nav class="navbar navbar-expand-lg p-0">
+      <div class="container-fluid d-flex justify-content-between p-2">
+        <div class="icone mx-5">
+          <a class="navbar-brand" href="#"><img src="./img/Logo.png" alt="Logo" width="70" /></a>
+          <a href="#instagram"><i class="bi bi-instagram"></i></a>
+          <a href="#whatsapp"><i class="bi bi-whatsapp"></i></a>
+          <a href="#facebook"><i class="bi bi-facebook"></i></a>
+          <a href="#twitch"><i class="bi bi-twitch"></i></a>
+        </div>
+        <div class="mx-5">
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarNavDropdown"
+            aria-controls="navbarNavDropdown"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNavDropdown">
+            <ul class="navbar-nav mx-5">
+              <li class="nav-item">
+                <a class="nav-link" aria-current="page" href="#">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#card">Collezione</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#telefono">Contattaci</a>
+              </li>
+            </ul>
+            <i class="bi bi-cart-plus-fill"></i>
+          </div>
+        </div>
+      </div>
+    </nav>
+
+    <div class="container">
+      <div class="container-fluid d-flex justify-content-between p-0 my-5">
+        <div class="container-fluid p-0">
+          <h1 class="mb-5">NIANTIC GAMING</h1>
+          <p class="me-5">
+            Benvenuti gamers, questo è il posto giusto per trovare quello che state cercando! Tutta l'attrezzatura, che
+            vi serve per migliorare le vostre prestazioni e aumentare la vostra voglia di gioco, si trova qui. Guardate
+            la nostra nuova collezione e scegliete con cura!
+          </p>
+        </div>
+        <div class="immagine">
+          <img src="./img/Ragazza.png" alt="Ragazza" />
+        </div>
+      </div>
+
+      <h3 class="text-center mb-5">I migliori gamers usano le nostre attrezzature:</h3>
+
+      <div id="carouselExampleCaptions" class="carousel slide">
+        <div class="carousel-indicators">
+          <button
+            type="button"
+            data-bs-target="#carouselExampleCaptions"
+            data-bs-slide-to="0"
+            class="active"
+            aria-current="true"
+            aria-label="Slide 1"
+          ></button>
+          <button
+            type="button"
+            data-bs-target="#carouselExampleCaptions"
+            data-bs-slide-to="1"
+            aria-label="Slide 2"
+          ></button>
+          <button
+            type="button"
+            data-bs-target="#carouselExampleCaptions"
+            data-bs-slide-to="2"
+            aria-label="Slide 3"
+          ></button>
+        </div>
+        <div class="carousel-inner">
+          <div class="carousel-item active p-5 sfondo">
+            <div class="d-flex">
+              <img src="./img/Mouse.png" class="d-block w-100" alt="Sfondo" />
+              <img src="./img/Pow3r.png" alt="Sfondo" width="300px" />
+              <img src="./img/Mouse.png" class="d-block w-100" alt="Sfondo" />
+            </div>
+            <div class="carousel-caption d-none d-md-block">
+              <h5>POW3R</h5>
+              <p>"Questo mouse ha una velocità di reazione spaventosa e una sensibilità formidabile!"</p>
+            </div>
+          </div>
+          <div class="carousel-item sfondo">
+            <div class="d-flex">
+              <img src="./img/Controller.png" class="d-block w-100" alt="Sfondo" />
+              <img src="./img/Ninja.webp" alt="Sfondo" width="100%" />
+              <img src="./img/Contreoller-PS5.webp" class="d-block w-100" alt="Sfondo" />
+            </div>
+            <div class="carousel-caption d-none d-md-block">
+              <h5>NINJA</h5>
+              <p>"Non sono un amante dei controller, ma questi due sono eccezionali e fidatevi dovete provarli!"</p>
+            </div>
+          </div>
+          <div class="carousel-item p-3 sfondo">
+            <div class="d-flex">
+              <img src="./img/Tastiera.png" class="d-block" alt="Sfondo" width="70%" />
+              <img src="./img/Tfue.webp" alt="Sfondo" width="400px" />
+              <img src="./img/Tastiera-logi.jpeg" class="d-block" alt="Sfondo" width="60%" />
+            </div>
+            <div class="carousel-caption d-none d-md-block">
+              <h5>TFUE</h5>
+              <p>
+                "La velocità con cui reagiscono tutti i stati e la loro fluidità, ti permettono di migliorare le tue
+                prestazioni!"
+              </p>
+            </div>
+          </div>
+        </div>
+        <button
+          class="carousel-control-prev"
+          type="button"
+          data-bs-target="#carouselExampleCaptions"
+          data-bs-slide="prev"
+        >
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button
+          class="carousel-control-next"
+          type="button"
+          data-bs-target="#carouselExampleCaptions"
+          data-bs-slide="next"
+        >
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+
+      <div class="collezione">
+        <div class="my-5 d-flex flex-wrap justify-content-between" id="card">
+          <div class="card my-4" style="width: 18rem">
+            <img src="./img/Controller.png" class="card-img-top" alt="Controller" />
+            <div class="card-body">
+              <h5 class="card-title">SCUF Controller</h5>
+              <p class="card-text">Un controller con ottime qualità, in grado di adattarsi ad ogni esigenza.</p>
+              <div class="carrello d-flex justify-content-between align-items-center">
+                <a href="#" class="btn btn-primary me-4">Aggiungi al carrello</a>
+                <p class="m-0">$249,99</p>
+              </div>
+            </div>
+          </div>
+          <div class="card my-4" style="width: 18rem">
+            <img src="./img/Controller.png" class="card-img-top" alt="Controller" />
+            <div class="card-body">
+              <h5 class="card-title">SCUF Controller</h5>
+              <p class="card-text">Un controller con ottime qualità, in grado di adattarsi ad ogni esigenza.</p>
+              <div class="carrello d-flex justify-content-between align-items-center">
+                <a href="#" class="btn btn-primary me-4">Aggiungi al carrello</a>
+                <p class="m-0">$249,99</p>
+              </div>
+            </div>
+          </div>
+          <div class="card my-4 tex" style="width: 18rem">
+            <img src="./img/Contreoller-PS5.webp" class="card-img-top" alt="Controller" />
+            <div class="card-body">
+              <h5 class="card-title">PS5 Controller</h5>
+              <p class="card-text">Un controller con ottime qualità, in grado di adattarsi ad ogni esigenza.</p>
+              <div class="carrello d-flex justify-content-between align-items-center">
+                <a href="#" class="btn btn-primary me-4">Aggiungi al carrello</a>
+                <p class="m-0">$79,99</p>
+              </div>
+            </div>
+          </div>
+          <div class="card my-4" style="width: 18rem">
+            <img src="./img/Contreoller-PS5.webp" class="card-img-top" alt="Controller" />
+            <div class="card-body">
+              <h5 class="card-title">PS5 Controller</h5>
+              <p class="card-text">Un controller con ottime qualità, in grado di adattarsi ad ogni esigenza.</p>
+              <div class="carrello d-flex justify-content-between align-items-center">
+                <a href="#" class="btn btn-primary me-4">Aggiungi al carrello</a>
+                <p class="m-0">$79,99</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="card my-4" style="width: 18rem">
+            <img src="./img/Mouse.png" class="card-img-top" alt="Controller" />
+            <div class="card-body">
+              <h5 class="card-title">Mouse BOLT</h5>
+              <p class="card-text">
+                Super veloce, super leggero e super calibrato, grazie all'aiuto dei gamers più esperti.
+              </p>
+              <div class="carrello d-flex justify-content-between align-items-center">
+                <a href="#" class="btn btn-primary me-4">Aggiungi al carrello</a>
+                <p class="m-0">$89,99</p>
+              </div>
+            </div>
+          </div>
+          <div class="card my-4" style="width: 18rem">
+            <img src="./img/Mouse.png" class="card-img-top" alt="Controller" />
+            <div class="card-body">
+              <h5 class="card-title">Mouse BOLT</h5>
+              <p class="card-text">
+                Super veloce, super leggero e super calibrato, grazie all'aiuto dei gamers più esperti.
+              </p>
+              <div class="carrello d-flex justify-content-between align-items-center">
+                <a href="#" class="btn btn-primary me-4">Aggiungi al carrello</a>
+                <p class="m-0">$89,99</p>
+              </div>
+            </div>
+          </div>
+          <div class="card my-4" style="width: 18rem">
+            <img src="./img/Mouse-Logi.webp" class="card-img-top" alt="Controller" />
+            <div class="card-body">
+              <h5 class="card-title">Mouse Pro-X</h5>
+              <p class="card-text">
+                Super veloce, super leggero e super calibrato, grazie all'aiuto dei gamers più esperti.
+              </p>
+              <div class="carrello d-flex justify-content-between align-items-center">
+                <a href="#" class="btn btn-primary me-4">Aggiungi al carrello</a>
+                <p class="m-0">$159,99</p>
+              </div>
+            </div>
+          </div>
+          <div class="card my-4" style="width: 18rem">
+            <img src="./img/Mouse-Logi.webp" class="card-img-top" alt="Controller" />
+            <div class="card-body">
+              <h5 class="card-title">Mouse Pro-X</h5>
+              <p class="card-text">
+                Super veloce, super leggero e super calibrato, grazie all'aiuto dei gamers più esperti.
+              </p>
+              <div class="carrello d-flex justify-content-between align-items-center">
+                <a href="#" class="btn btn-primary me-4">Aggiungi al carrello</a>
+                <p class="m-0">$159,99</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="card my-4" style="width: 18rem">
+            <img src="./img/Tastiera.png" class="card-img-top" alt="Controller" />
+            <div class="card-body">
+              <h5 class="card-title">Tastiera Streak</h5>
+              <p class="card-text">
+                Una tastiera con tasi a pression, in grado di essere molto veloce nel tempo di reazione.
+              </p>
+              <div class="carrello d-flex justify-content-between align-items-center">
+                <a href="#" class="btn btn-primary me-4">Aggiungi al carrello</a>
+                <p class="m-0">$109,99</p>
+              </div>
+            </div>
+          </div>
+          <div class="card my-4" style="width: 18rem">
+            <img src="./img/Tastiera.png" class="card-img-top" alt="Controller" />
+            <div class="card-body">
+              <h5 class="card-title">Tastiera Streak</h5>
+              <p class="card-text">
+                Una tastiera con tasi a pression, in grado di essere molto veloce nel tempo di reazione.
+              </p>
+              <div class="carrello d-flex justify-content-between align-items-center">
+                <a href="#" class="btn btn-primary me-4">Aggiungi al carrello</a>
+                <p class="m-0">$109,99</p>
+              </div>
+            </div>
+          </div>
+          <div class="card my-4" style="width: 18rem">
+            <img src="./img/Tastiera-logi.jpeg" class="card-img-top" alt="Controller" />
+            <div class="card-body">
+              <h5 class="card-title">Tastiera Meccanica</h5>
+              <p class="card-text">
+                Una tastiera con tasi a pression, in grado di essere molto veloce nel tempo di reazione.
+              </p>
+              <div class="carrello d-flex justify-content-between align-items-center">
+                <a href="#" class="btn btn-primary me-4">Aggiungi al carrello</a>
+                <p class="m-0">$149,99</p>
+              </div>
+            </div>
+          </div>
+          <div class="card my-4" style="width: 18rem">
+            <img src="./img/Tastiera-logi.jpeg" class="card-img-top" alt="Controller" />
+            <div class="card-body">
+              <h5 class="card-title">Tastiera Meccanica</h5>
+              <p class="card-text">
+                Una tastiera con tasi a pression, in grado di essere molto veloce nel tempo di reazione.
+              </p>
+              <div class="carrello d-flex justify-content-between align-items-center">
+                <a href="#" class="btn btn-primary me-4">Aggiungi al carrello</a>
+                <p class="m-0">$149,99</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="partner text-center my-5 p-5">
+      <h2 class="mb-5">PARTNERSHIP</h2>
+      <img class="mx-5" src="./img/logo Fnatic.png" alt="Logo Fnatic" width="400px" />
+      <img class="mx-5" src="./img/Logo Logitech.png" alt="Logo Logitech" width="400px" />
+      <img class="mx-5" src="./img/Logo PS.jpg" alt="Logo PS" width="400px" />
+    </div>
+
+    <footer>
+      <h3><img src="./img/Logo.png" alt="Logo" width="50" />NIANTIC GAMING</h3>
+      <p>Copyright &copy; 2023 Niantic Gaming</p>
+      <p id="telefono"><i class="bi bi-telephone-fill"></i> 011545729</p>
+      <div class="contatti">
+        <h5 class="my-4">SOCIAL</h5>
+        <p>
+          <a href="#"><i class="bi bi-instagram" id="instagram"> </i>| Instagram</a>
+          <a href="#"><i class="bi bi-whatsapp" id="whatsapp"></i> | Whatsapp</a>
+          <a href="#"><i class="bi bi-facebook" id="facebook"></i> | Facebook</a>
+          <a href="#"><i class="bi bi-twitch" id="twitch"></i> | Twitch</a>
+        </p>
+      </div>
+      <p class="mt-5">
+        <a href="#" class="mx-4">Legal Stuff</a> | <a href="#" class="mx-4">Privacy Policy</a> |
+        <a href="#" class="mx-4">Security</a>
+      </p>
+    </footer>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>

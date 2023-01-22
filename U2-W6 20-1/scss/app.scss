@@ -1,0 +1,83 @@
+@import "color";
+body {
+  font-family: "Orbitron", sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: $viola;
+  color: white;
+
+  nav {
+    margin: 0;
+    padding: 0;
+    position: sticky !important;
+    top: 0;
+    z-index: 2;
+    .container-fluid {
+      background-color: $turchese;
+      img {
+        width: 9%;
+      }
+      i {
+        color: white;
+        font-size: 25px;
+        margin-left: 20px;
+        cursor: pointer;
+      }
+      li a {
+        color: white;
+        font-weight: bold;
+      }
+    }
+  }
+
+  @mixin sfocus {
+    box-shadow: 0px 0px 100px 0px aqua;
+    border: 1px solid aqua;
+  }
+
+  .immagine img {
+    @include sfocus();
+  }
+
+  #carouselExampleCaptions {
+    @include sfocus();
+  }
+
+  .card {
+    background-color: $arancione;
+    border: 1px solid aqua;
+    .card-body {
+      border-top: 1px solid white;
+    }
+    &:hover {
+      box-shadow: 0px 0px 20px 5px aqua;
+      transform: scale(1.1);
+    }
+  }
+
+  .partner {
+    background-color: $bianco-turchese;
+  }
+
+  footer {
+    background-color: $turchese;
+    padding: 20px;
+    color: white;
+    text-align: center;
+    margin-top: 100px;
+    h3 {
+      font-size: 20px;
+    }
+    p {
+      font-size: 15px;
+    }
+    a {
+      text-decoration: none;
+      color: white;
+    }
+  }
+}
+
+.sfondo {
+  background-color: $arancione;
+}

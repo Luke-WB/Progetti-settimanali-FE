@@ -38,9 +38,10 @@
 }
 
 body {
-  background-image: url(./assets/Sfondo.avif);
+  background-image: url(./assets/sfondo.avif);
   background-repeat: no-repeat;
   background-size: cover;
-  background-position: 50%;
+  background-attachment: local;
+  background-position: 100%;
   height: 100vh;
 }

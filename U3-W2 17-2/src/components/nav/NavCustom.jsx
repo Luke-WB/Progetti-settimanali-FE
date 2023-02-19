@@ -39,14 +39,14 @@ const NavCustom = (props) => {
           <Navbar.Toggle aria-controls="navbarScroll" />
           <Navbar.Collapse id="navbarScroll">
             <Nav className="me-auto my-2 my-lg-0" style={{ maxHeight: "100px" }} navbarScroll>
-              <Nav.Link href="#action1" className="d-flex align-items-center">
+              <Nav.Link href="#action1" className="d-flex align-items-center text-white">
                 <FaHome className="me-1" /> <strong>Home</strong>
               </Nav.Link>
-              <Nav.Link href="#action1" className="d-flex align-items-center">
+              <Nav.Link href="#action1" className="d-flex align-items-center text-white">
                 <FaStar className="me-1" />
                 <strong>Favourite</strong>
               </Nav.Link>
-              <Nav.Link href="#action2" className="d-flex align-items-center">
+              <Nav.Link href="#action2" className="d-flex align-items-center text-white">
                 <FaCity className="me-1" />
                 <strong>Tutte le città</strong>
               </Nav.Link>

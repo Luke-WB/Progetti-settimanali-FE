@@ -1,5 +1,6 @@
 import { Card } from "react-bootstrap";
 import { useEffect, useState } from "react";
+import "./CurrentWeather.css";
 
 const CurrentWeather = (props) => {
   const [dati, setDati] = useState([]);
@@ -7,7 +8,7 @@ const CurrentWeather = (props) => {
   const currentWeatherFetch = async () => {
     try {
       const response = await fetch(
-        "https://api.openweathermap.org/data/2.5/weather?lat=25.790654&lon=-80.1300455&appid=e40db6ffb5aae3fa14856c109bf74b38&units=metric"
+        `https://api.openweathermap.org/data/2.5/weather?lat=${props.lat}&lon=${props.lon}&appid=e40db6ffb5aae3fa14856c109bf74b38&units=metric`
       );
       if (response.ok) {
         const data = await response.json();
@@ -22,22 +23,27 @@ const CurrentWeather = (props) => {
   };
   useEffect(() => {
     currentWeatherFetch();
-  }, []);
+  }, [props.lat, props.lon]);
   return (
     <>
-      <div className="d-flex justify-content-center">
-        <Card style={{ width: "18rem" }}>
-          <Card.Img variant="top" src={props.img} />
+      <div className="d-flex justify-content-center my-5">
+        <Card style={{ width: "50rem" }} className="text-center">
           <Card.Body>
-            <Card.Title>{dati.name}</Card.Title>
+            <h1>{dati.name}</h1>
             <Card.Text>
-              <strong>TEMPERATURA ATTUALE:</strong>
-              {dati.main?.temp}°C
+              <div>
+                <img src={`http://openweathermap.org/img/wn/${dati.weather?.icon}@2x.png`} alt="" />
+                <h2>{dati.main?.temp}°C</h2>
+              </div>
               <p>{dati.weather && dati.weather[0].description}</p>
+              <div className="d-flex justify-content-between flex-wrap my-4">
+                <p>Percepita: {dati.main?.feels_like}°C</p>
+                <p>Pressione: {dati.main?.pressure} mb</p>
+                <p>Umidità: {dati.main?.humidity}%</p>
+                <p>Visibilità: {dati.visibility} km</p>
+              </div>
+              Vento: {dati.wind?.speed} km/h
             </Card.Text>
-            <strong>MAX</strong> {dati.main?.temp_max}°C
-            <strong>MIN</strong> {dati.main?.temp_min}°C
-            <strong>UMIDITA'</strong> {dati.main?.humidity}%{dati.weather && dati.weather[0].main}
           </Card.Body>
         </Card>
       </div>

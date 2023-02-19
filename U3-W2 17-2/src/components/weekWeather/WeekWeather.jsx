@@ -1,13 +1,14 @@
 import { useEffect, useState } from "react";
 import { Card } from "react-bootstrap";
+import "./weekWeather.css";
 
-const WeekWeather = () => {
+const WeekWeather = (props) => {
   const [dati, setDati] = useState([]);
 
   const weekWeatherFetch = async () => {
     try {
       const response = await fetch(
-        "https://api.openweathermap.org/data/2.5/forecast?lat=25.790654&lon=-80.1300455&appid=e40db6ffb5aae3fa14856c109bf74b38&units=metric&cnt=8"
+        ` https://api.openweathermap.org/data/2.5/forecast?lat=${props.lat}&lon=${props.lon}&appid=e40db6ffb5aae3fa14856c109bf74b38&units=metric&cnt=8`
       );
       if (response.ok) {
         const data = await response.json();
@@ -22,24 +23,17 @@ const WeekWeather = () => {
   };
   useEffect(() => {
     weekWeatherFetch();
-  }, []);
+  }, [props.lat, props.lon]);
   return (
     <>
-      <h3>Giornaliero</h3>
-      <div className="d-flex justify-content-center">
+      <h3 className="mx-5">Ogni ora</h3>
+      <div className="d-flex justify-content-between mx-5">
         {dati.map((info, i) => {
           return (
-            <Card style={{ width: "18rem" }} key={i}>
-              <Card.Img variant="top" src="" />
+            <Card style={{ width: "10rem" }} key={i} className="text-center">
               <Card.Body>
-                <Card.Title>{info.name}</Card.Title>
-                <Card.Text>
-                  <strong>TEMPERATURA:</strong>
-                  {info.main?.temp}°C
-                </Card.Text>
-                <p>MAX {info.main?.temp_max}°C</p>
-                {info.main?.temp_min}°C
-                {info.main?.humidity}%{info.weather && info.weather[0].main}
+                <Card.Text>Ore: {info.dt_txt.slice(11, 16)}</Card.Text>
+                <Card.Text>{info.main?.temp}°C</Card.Text>
                 {info.weather && info.weather[0].description}
               </Card.Body>
             </Card>

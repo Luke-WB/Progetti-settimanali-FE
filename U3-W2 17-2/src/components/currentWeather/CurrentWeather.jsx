@@ -29,7 +29,7 @@ const CurrentWeather = (props) => {
       <div className="d-flex justify-content-center my-5">
         <Card style={{ width: "50rem" }} className="text-center">
           <Card.Body>
-            <h1>{dati.name.toUpperCase()}</h1>
+            <h1>{dati.name}</h1>
             <Card.Text>
               <div>
                 <img src={`http://openweathermap.org/img/wn/${dati.weather?.icon}@2x.png`} alt="" />
